@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIAKOS Developer Workspace</title>
+<style>
+:root{--g:#1f7a4d;--d:#073b22;--m:#ecfdf5;--b:#eff6ff;--l:#dfe8df;--i:#17251c;--s:0 18px 45px rgba(25,61,38,.1)}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif;background:linear-gradient(135deg,#f6fff8,#eef8ff);color:var(--i);line-height:1.7}a{text-decoration:none;color:inherit}
+header{padding:58px 24px;text-align:center;color:#fff;background:linear-gradient(135deg,#073b22,#1f7a4d)}h1{margin:0;font-size:clamp(2.4rem,5vw,4rem);font-weight:1000}header p{font-weight:800;color:rgba(255,255,255,.88)}main{max-width:1180px;margin:auto;padding:34px 20px 70px}.notice{background:#fff;border:1px solid var(--l);border-radius:22px;padding:20px;box-shadow:var(--s);font-weight:900;color:#14532d}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}.card{background:#fff;border:1px solid var(--l);border-radius:24px;padding:24px;box-shadow:var(--s);transition:.2s}.card:hover{transform:translateY(-3px)}.icon{font-size:42px}.card h2{margin:8px 0;color:var(--d)}.card p{color:#53635a;font-weight:700}.tag{display:inline-flex;margin-top:10px;background:var(--m);border:1px solid #bbf7d0;color:#166534;border-radius:999px;padding:4px 12px;font-weight:900}.roadmap{margin-top:24px;background:#fff;border:1px solid var(--l);border-radius:24px;padding:26px;box-shadow:var(--s)}footer{text-align:center;padding:28px;color:#5b6b62;font-weight:800}@media(max-width:850px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><h1>🧠 AIAKOS Developer Workspace</h1><p>AI Agriculture Knowledge Operating System｜官方開發中心</p></header>
+<main>
+<div class="notice">這裡是 AIAKOS Core 的開發入口，統一管理 Engine、Service、JSON Schema、Developer Assistants、版本路線與測試中心。</div>
+<div class="grid">
+<a class="card" href="developer-manual.html"><div class="icon">📘</div><h2>Developer Manual</h2><p>AIAKOS 官方開發手冊 v1.0。</p><span class="tag">Start Here</span></a>
+<a class="card" href="architecture/system-overview.md"><div class="icon">🏗️</div><h2>Architecture</h2><p>核心架構、Engine 分層與資料流。</p><span class="tag">Core</span></a>
+<a class="card" href="schemas/diseases.schema.json"><div class="icon">🗂️</div><h2>JSON Schema</h2><p>crops、diseases、pests、weather_rules 標準。</p><span class="tag">Data</span></a>
+<a class="card" href="assistants/disease-assistant.md"><div class="icon">🤖</div><h2>AI Assistants</h2><p>Disease、Pest、Crop、Weather、Core Developer Assistants。</p><span class="tag">Agent</span></a>
+<a class="card" href="tests/engine-test-center.html"><div class="icon">🧪</div><h2>Engine Test Center</h2><p>測試 WeatherEngine、DiseaseEngine、DecisionEngine。</p><span class="tag">Test</span></a>
+<a class="card" href="docs/version-history.md"><div class="icon">📊</div><h2>Version Dashboard</h2><p>版本紀錄、Roadmap 與模組進度。</p><span class="tag">Roadmap</span></a>
+</div>
+<div class="roadmap"><h2>🚀 一次完成策略</h2><p>本 Workspace 先完成 AIAKOS 的開發骨架與文件標準，之後 AI花藝設計師學院、AI農業經營大富翁、AI智慧養殖等專業網頁，都直接依此規範接入 AIAKOS Core，避免每個平台重做資料與判斷邏輯。</p></div>
+</main><footer>© 2026 AIAKOS Developer Workspace｜AI農業教育平台</footer>
+</body></html>
