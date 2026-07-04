@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIAKOS weather_rules.json schema",
+  "type": "object",
+  "required": ["version", "temperature", "rainfall", "wind", "humidity"],
+  "properties": {
+    "version": {"type": "string"},
+    "updatedAt": {"type": "string"},
+    "temperature": {"type": "object"},
+    "rainfall": {"type": "object"},
+    "wind": {"type": "object"},
+    "humidity": {"type": "object"},
+    "confidence": {"type": "object"}
+  }
+}

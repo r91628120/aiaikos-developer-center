@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIAKOS pests.json schema",
+  "type": "object",
+  "required": ["id", "name", "crops", "monitoring"],
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "category": {"type": "string"},
+    "pestType": {"type": "string"},
+    "crops": {"type": "array", "items": {"type": "string"}},
+    "damageType": {"type": "array", "items": {"type": "string"}},
+    "monitoring": {"type": "object"},
+    "sourceUrl": {"type": ["string", "null"]}
+  }
+}

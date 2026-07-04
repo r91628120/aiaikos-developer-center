@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIAKOS diseases.json schema",
+  "type": "object",
+  "required": ["id", "crop", "crops", "name", "conditions"],
+  "properties": {
+    "id": {"type": "string"},
+    "crop": {"type": "string"},
+    "crops": {"type": "array", "items": {"type": "string"}},
+    "name": {"type": "string"},
+    "pathogenType": {"type": ["string", "null"]},
+    "conditions": {
+      "type": "object",
+      "properties": {
+        "tempRange": {"type": "array", "items": {"type": "number"}, "minItems": 2, "maxItems": 2},
+        "humidityMin": {"type": ["number", "null"]},
+        "rainMin": {"type": ["number", "null"]},
+        "sunshineMax": {"type": ["number", "null"]},
+        "windSensitive": {"type": "boolean"}
+      }
+    },
+    "riskFactors": {"type": "array", "items": {"type": "string"}},
+    "symptoms": {"type": "array", "items": {"type": "string"}},
+    "advice": {"type": ["string", "null"]},
+    "sourceUrl": {"type": ["string", "null"]},
+    "updatedAt": {"type": ["string", "null"]}
+  }
+}

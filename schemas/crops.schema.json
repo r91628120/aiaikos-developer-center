@@ -1,1 +1,19 @@
-
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIAKOS crops.json schema",
+  "type": "object",
+  "required": ["id", "name", "category", "updatedAt"],
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "category": {"type": "string"},
+    "scientificName": {"type": ["string", "null"]},
+    "family": {"type": ["string", "null"]},
+    "growthStages": {"type": "array", "items": {"type": "string"}},
+    "climate": {"type": "object"},
+    "soil": {"type": "object"},
+    "source": {"type": ["string", "null"]},
+    "sourceUrl": {"type": ["string", "null"]},
+    "updatedAt": {"type": "string"}
+  }
+}

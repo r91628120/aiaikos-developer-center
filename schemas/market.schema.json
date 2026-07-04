@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AIAKOS market.json schema - reserved",
+  "type": "object",
+  "properties": {
+    "cropId": {"type": "string"},
+    "marketName": {"type": "string"},
+    "price": {"type": "number"},
+    "date": {"type": "string"}
+  }
+}
