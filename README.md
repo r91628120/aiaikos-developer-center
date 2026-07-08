@@ -22,3 +22,7 @@ AI 大腦只有一個，
 - [Project Index](./projects/00-Project-Index.md)
 - [AIAKOS White Paper](./docs/whitepaper/AIAKOS-White-Paper-v1.0.md)
 - [Regional Agricultural Intelligence](./docs/whitepaper/AI-Regional-Agricultural-Intelligence-v1.0.md)
+
+-AIAKOS Architecture Rule #1」
+
+任何新增的功能、文件、平台或 AI 模組，都必須先歸類到既有架構；只有在無法歸類時，才考慮新增新的架構。 
